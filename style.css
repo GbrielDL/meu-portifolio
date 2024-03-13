@@ -36,14 +36,14 @@ header {
 
 nav {
     padding: 10px;
-    margin: auto;
-    max-width: 100vh;
+    text-align: center;
 }
 
 nav>a {
     color: white;
     text-decoration: none;
     padding: 15px 30px;
+    line-height: 50px;
 
     transition: 300ms;
 }
@@ -127,6 +127,7 @@ section#sobre {
 #contato h1 {
     font-size: 4em;
     font-weight: 500;
+    text-transform: uppercase;
 }
 
 #sobre article>p {
