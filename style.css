@@ -1,0 +1,238 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    /*font*/
+    --default_font: "Poppins", sans-serif;
+    /*cores*/
+    --dark_grey: #302e2e;
+    --light_black: #131212;
+    --light_grey: #a5a8a4;
+    --dark_white: #f3f4f3;
+    --brown: #776056;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    max-width: 100%;
+    background-image: linear-gradient(to right, black, var(--dark_grey));
+    color: white;
+    font-family: var(--default_font);
+}
+
+header {
+    margin: auto;
+}
+
+nav {
+    padding: 10px;
+    margin: auto;
+    max-width: 100vh;
+}
+
+nav>a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 30px;
+
+    transition: 300ms;
+}
+
+nav>a:hover {
+    padding-bottom: 10px;
+    border-bottom: 1px solid white;
+}
+
+main {
+    max-width: 100%;
+}
+
+section#home {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 150px;
+}
+
+#home article>h1.especial {
+    font-size: 1.5em;
+    padding: 6px 0px;
+    font-weight: 400;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    background-color: white;
+    color: var(--light_black);
+    text-align: center;
+    border-radius: 15px 0px 15px 0px;
+    width: 300px;
+}
+
+#home article h1.normal {
+    font-size: 4em;
+    line-height: 70px;
+    margin: 35px 0px 20px 0px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+#home h2 {
+    font-size: 1.2em;
+    font-weight: 400;
+    letter-spacing: 5px;
+    color: #ffffffc5;
+}
+
+#home div.foto>div {
+    background-image: url(imagens/minha_foto.jpeg);
+    width: 300px;
+    height: 550px;
+    color: transparent;
+    border-radius: 200px;
+    box-shadow: 10px 10px 15px #0000001e;
+}
+
+#home article {
+    margin-top: 100px;
+}
+
+section#sobre {
+    margin: auto;
+    margin-top: 100px;
+    padding: 100px;
+    display: flex;
+}
+
+#sobre img {
+    width: 600px;
+    border-radius: 200px;
+}
+
+#sobre article {
+    padding: 0px 25px;
+    text-align: end;
+}
+
+#sobre article>h1,
+#formacao h1,
+#projetos h1,
+#contato h1 {
+    font-size: 4em;
+    font-weight: 500;
+}
+
+#sobre article>p {
+    margin-top: 15px;
+    font-weight: 400;
+    color: #ffffffc5;
+}
+
+section#formacao {
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    padding: 100px;
+}
+
+#formacao img {
+    width: 600px;
+    border-radius: 200px;
+}
+
+#formacao h2 {
+    margin: 15px 0px;
+    font-weight: 400;
+}
+
+#formacao p {
+    color: #ffffffc5;
+}
+
+section#projetos {
+    margin: auto;
+    margin-top: 100px;
+}
+
+#projetos div.img_projetos {
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    height: 400px;
+    overflow-y: scroll;
+    box-shadow: 0px 0px 25px #00000059;
+    scrollbar-width: none;
+}
+
+#projetos article {
+    text-align: center;
+}
+
+#projetos div.projeto-01,
+div.projeto-02,
+div.projeto-03 {
+    color: transparent;
+    width: 350px;
+    height: 100vh;
+    margin-top: 50px;
+    background-size: cover;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.projeto-01 {
+    background: black url(imagens/projeto01.png) top center no-repeat;
+}
+
+.projeto-02 {
+    background: black url(imagens/projeto02.png) top center no-repeat;
+}
+
+.projeto-03 {
+    background: black url(imagens/projeto03.png) top center no-repeat;
+}
+
+#projetos p {
+    letter-spacing: 5px;
+    color: #ffffffc5;
+}
+
+section#contato {
+    margin: auto;
+    margin-top: 200px;
+    padding: 100px 150px;
+}
+
+#contato ul {
+    columns: 2;
+    max-width: 670px;
+    height: 150px;
+    list-style: none;
+    margin-top: 15px;
+}
+
+#contato ul>li {
+    line-height: 35px;
+}
+
+ul a {
+    color: white;
+    text-decoration: none;
+}
+
+ul a:hover {
+    text-decoration: underline;
+    color: gray;
+}
+
+ul a::after {
+    content: '\1F517';
+}
