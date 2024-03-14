@@ -389,7 +389,7 @@ ul a::after {
     }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 280px) {
     section#home {
         font-size: 0.5em;
     }
