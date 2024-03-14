@@ -237,3 +237,44 @@ ul a:hover {
 ul a::after {
     content: '\1F517';
 }
+
+
+@media screen and (max-width: 1200px) {
+    section#sobre {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+
+    section#projetos div.projeto-01,
+    div.projeto-02,
+    div.projeto-03 {
+        width: 250px;
+        height: 100vh;
+    }
+
+    #projetos div.img_projetos {
+        height: 350px;
+    }
+
+}
+
+@media screen and (max-width: 980px) {
+    section#formacao {
+        display: block;
+        text-align: center;
+    }
+
+    section#formacao img {
+        margin-top: 25px;
+    }
+
+    section#contato {
+        maxwidth: 300px;
+    }
+
+    #contato ul {
+        columns: 1;
+    }
+}
