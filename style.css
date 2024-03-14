@@ -294,7 +294,7 @@ ul a::after {
     }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 530px) {
     header {
         display: none;
         margin: 0;
